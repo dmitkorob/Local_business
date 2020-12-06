@@ -1,0 +1,348 @@
+.color-blue {
+	background: #709dca;
+}
+.color-orange {
+	background: #ffc155;
+}
+.color-lite_blue {
+	background: #e7edf3;
+}
+
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+header .row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90px;
+	background: #fff;
+	padding: 0px 40px 0px 40px;
+	
+}
+header .nav {
+	list-style: none;
+	display: flex;
+}
+header .nav  li {
+	padding-left: 20px;
+}
+/*НЕ ПОЛУЧАЕТСЯ ИЗБАВИТЬСЯ ОТ ОТСТУПОВ BORDER`А*/
+header li  a{ 
+	box-sizing: border-box;
+	border: 1px solid #FFF;
+	border-radius: 5px;
+	padding: 10px;
+	text-decoration: none;
+	color: #868686;
+}
+header li a:hover {
+	box-sizing: border-box;
+	border: 1px solid;
+	border-radius: 5px;
+	color: #fff;
+	background: #ffbb42;
+}
+#wrapper-content {
+	margin-top: 90px;
+}
+#home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 590px;
+	margin-bottom: 150px;
+}
+#home h1 {
+	text-transform: uppercase;
+	padding: 140px 0px 10px 0px;
+	margin: 0;
+	color: #fff;
+}
+#home p {
+	margin: 0;
+	padding-bottom: 30px;
+	color: #fff;
+}
+#home form {
+	display: flex;
+	justify-content: space-between;
+}
+#home form input {
+	height: 45px;
+	width: 285px;
+	margin: 0px 15px 0px 15px;
+	padding-left: 10px;
+	border: none;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+#home form input[type=submit] {
+	height: 45px;
+	width: 285px;
+	background: #ffc155;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+#home form input[type=submit]:hover {
+	height: 45px;
+	width: 285px;
+	background: #fff;
+	border: none;
+	color: #ffc155;
+	cursor: pointer;
+}
+#home .laptop {
+	margin: 70px 0px 10px 0px;
+	z-index: 2;
+	position: relative;
+}
+#home .viewport {
+	position: absolute;
+	right: 100px;
+	z-index: 3;
+	height: 278px;
+	width: 445px;
+	/*transform: translate(10px, 10px);*/
+	top: 18px;
+	/*background-size: cover;*/
+}
+#our_services {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 120px;
+}
+#our_services .service_list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 50px;
+	grid-auto-flow:column;
+	padding-top: 80px;
+}
+#our_services .service h4{
+	text-transform: uppercase;
+	color: #394b50;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	margin: 0;
+}
+#our_services .service p{
+	color: #7b7b7b;
+}
+#our_services h2 {
+	text-transform: uppercase;
+	color: #394b50;
+}
+#our_services p {
+	color: #394b50;
+}
+#our_services .service {
+	display: flex;
+	/*flex-direction: column;*/
+	/*justify-content: flex-end;*/
+	/*margin-right: 50px;*/
+
+
+}
+#our_services .desc {
+	/*padding-left: 30px;*/
+	/*display: flex;
+	justify-content: flex-end;
+	flex-direction: column;*/
+	width: 80%;
+}
+#our_services .service::before {
+	content: '';
+	display: block;
+	background: url(../images/services/services_sprites.png) no-repeat;
+	width: 63px;
+	height: 56px;
+	margin: 0 auto;
+
+}
+#our_services .service.c1::before {
+	background-position: -63px 0px;
+}
+#our_services .service.c2::before {
+	background-position: -189px 0px ;
+
+}
+#our_services .service.c3::before {
+	background-position: -63px -56px ;
+}
+#our_services .service.c4::before {
+	background-position: -126px 0px;
+}
+#our_services .service.c5::before {
+	background-position: 0px -56px;
+}
+#our_services .service.c6::before {
+	background-position: 0 0;
+}
+#about {
+	display: flex;
+	position: relative;
+	height: 552px;
+}
+/*#about .about_i {
+	width: 50%;
+}*/
+#about .about_block_1 {
+	position: relative;
+	width: 50%;
+}
+#about .about_image {
+	position: absolute;
+	right: 0px;
+	width: 951px;
+}
+#about h2 {
+	text-transform: uppercase;
+	color: #fff;
+}
+#about p {
+	color: #fff;
+	padding-bottom: 30px;
+}
+#about .about_block_2 {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#about .about_desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 70px;
+}
+#about .about_read {
+	border: 1px solid #e7ad48;
+	border-radius: 3px; 
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 25px;
+	background: #ffc155;
+}
+#about .about_read:hover {
+	border: 1px solid #e7ad48;
+	border-radius: 3px; 
+	cursor: pointer;
+	color: #ffc155;
+	text-decoration: none;
+	padding: 15px 25px;
+	background: #fff;
+}
+#price {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0px 100px 0px;
+	/*height: 900px;*/
+}
+#price .price_name {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#price .price_name h2 {
+	text-transform: uppercase;
+	color: #394b50;
+	margin: 0;
+	padding: 50px 0px 10px 0px;
+}
+#price .price_name p {
+	text-transform: uppercase;
+	color: #98a7ac;
+	margin: 0;
+	padding-bottom: 60px;
+}
+#price .price_block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+#price .block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	width: 33.33%;
+	padding: 20px 20px 40px 20px;}
+#price .block p {
+	margin: 0;
+	padding: 10px 0px 10px 0px;
+	text-transform: uppercase;
+	color: #959da5;
+}
+#price .block p:nth-child(1) {
+	text-transform: uppercase;
+	font-size: 1.7em;
+}
+#price .block.c2 {
+	background: #709dca;
+	padding: 70px;
+}
+#price .block.c2 p {
+	color: #fff;
+}
+#price a {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px;
+	color: #fff;
+	background: #ffc155;
+	border-radius: 3px;
+}
+#price a:hover {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px;
+	color: #ffc155;
+	background: #F0F0F0;
+	border-radius: 3px;
+}
+#price .block.c1 p:nth-child(2) {
+	font-size: 4em;
+	padding: 0;
+	color: #ffc155;
+}
+#price .block.c2 p:nth-child(2) {
+	font-size: 4em;
+	padding: 0;
+	color: #fff;
+}
+#price .block.c3 p:nth-child(2) {
+	font-size: 4em;
+	padding: 0;
+	color: #ffc155;
+}
+#price .block p:nth-child(3n) {
+	padding-bottom: 30px;
+}
+/*#price .block p:nth-child(6) { //почему не работает???
+	padding-bottom: 30px;
+}*/
+#price .top-border {
+	text-transform: uppercase;
+	border-top: 1px solid #8eb8e2;
+	width: 100%;
+}
+#price .top-border-center {
+	text-transform: uppercase;
+	border-top: 1px solid #fff;
+	width: 100%;
+}
