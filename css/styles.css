@@ -388,10 +388,46 @@ header li a:hover {
 	text-transform: uppercase;
 	color: #394b50;
 	margin: 0;
-	/*padding: 50px 0px 10px 0px;*/
 }
 #how_it_works .heading p {
 	color: #98a7ac;
 	margin: 0;
-	/*padding-bottom: 30px;*/
+}
+#happy_clients {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 60px;
+}
+#happy_clients .heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+#happy_clients .heading h2 {
+	margin: 0;
+}
+#happy_clients .heading p {
+	margin: 0;
+}
+#happy_clients .blocks {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px 30px;
+	padding-bottom: 60px;
+}
+#happy_clients .block {
+	display: flex;
+	background: #fff;
+	padding: 20px;
+}
+#happy_clients .block .abbr {
+	padding: 10px;
+}
+#happy_clients .block img {
+	border: 1px solid #fff;
+	border-radius: 100%;
 }
