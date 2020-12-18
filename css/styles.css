@@ -430,4 +430,11 @@ header li a:hover {
 #happy_clients .block img {
 	border: 1px solid #fff;
 	border-radius: 100%;
+	transform: scale(0.8, 0.8);
+}
+#happy_clients .block .abbr p {
+	text-transform: uppercase;
+}
+#happy_clients .block .abbr p > span {
+	color: #f78344;
 }
